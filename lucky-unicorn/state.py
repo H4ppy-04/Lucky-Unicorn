@@ -6,8 +6,8 @@ from prize import Prize
 class State(object):
 
     def __init__(self):
-        self.json_local = self.deserialize("local.json")
-        self.json_prizes = self.deserialize("prizes.json")
+        self.json_local = self.deserialize("data/local.json")
+        self.json_prizes = self.deserialize("data/prizes.json")
         self.current_credits = self.json_local["credits"]["current"]
         self.starting_credits = self.json_local["credits"]["starting"]
         self.games_played = self.json_local["games_played"]
@@ -38,7 +38,7 @@ class State(object):
             },
         }
 
-    def dump(self, path="local.json"):
+    def dump(self, path="data/local.json"):
         data = self.serialize()
         with open(path, "w") as fp:
             json.dump(data, fp, indent=4, sort_keys=True)

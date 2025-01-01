@@ -8,7 +8,7 @@ class Prize:
     value: float
 
     def get_artwork_file(self):
-        return os.path.join("animals", (self.name + ".txt"))
+        return os.path.join("data", "animals", (self.name + ".txt"))
 
     def artwork(self):
         path = self.get_artwork_file()

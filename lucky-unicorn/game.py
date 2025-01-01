@@ -6,7 +6,6 @@ from random import choice as choose_from
 from typing import Optional
 
 from colorama import Fore, init
-
 from prize import Prize
 from state import State
 
@@ -68,7 +67,7 @@ class Game(State):
 
     def end_round(self):
         if input("Play again? [n,Y*] > ").lower() not in ["y", ""]:
-            self.dump(path="local.json")
+            self.dump(path="data/local.json")
             sys.exit("See you next time!")
 
     def play(self):

@@ -1,4 +1,4 @@
-# Luck Unicorn
+# Lucky Unicorn
 
 
 ## History
@@ -7,6 +7,26 @@ This is a game that was made a very long time ago.  I went back to visit it,
 and improved the code a little.  I decided that even though it's not my best
 work, I should publish it anyway. Perhaps someone can learn from the code.
 
+## Install
+
+### Clone the repo
+```bash
+git clone https://github.com/H4ppy-04/Lucky-Unicorn; cd Lucky-Unicorn;
+```
+### Create a virtual environment
+```bash
+python -m venv venv; source ./venv/bin/activate;
+```
+
+### Install dependencies
+```bash
+python -m pip install -r requirements.txt;
+```
+
+### Play the game
+```bash
+python lucky-unicorn
+```
 
 ## How to Play
 

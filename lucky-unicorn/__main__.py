@@ -3,21 +3,20 @@ Lucky Unicorn Game.
 Copyright (c) 2022-2025 Joshua Rose
 """
 
-import sys
+import os
 
 from game import Game
 
 
 def main():
-    game = Game()
-
-    if "--reset" in sys.argv:
-        with open("local.json", "w") as local, open("spec.json", "r") as spec:
+    if not os.path.isfile("data/local.json"):
+        with open("data/local.json", "w") as local, open("data/spec.json", "r") as spec:
             local.write(spec.read())
+            local.close()
 
+    game = Game()
     game.greet()
     game.show_prizes()
-
     input("Press enter to start playing. Good luck!")
     game.play()
 
