@@ -1,0 +1,11 @@
+{
+  "zebra": {
+    "value": 0.05
+  },
+  "horse": {
+    "value": 0.1
+  },
+  "unicorn": {
+    "value": 1.0
+  }
+}

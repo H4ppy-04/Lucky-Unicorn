@@ -1,0 +1,9 @@
+{
+    "credits": {
+        "current": 20.0,
+        "starting": 20.0
+    },
+    "games_played": 0,
+    "prizes_won": [],
+    "step": 0.1
+}
