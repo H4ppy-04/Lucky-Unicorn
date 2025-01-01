@@ -1,3 +1,8 @@
+"""
+Lucky Unicorn Game.
+Copyright (c) 2022-2025 Joshua Rose
+"""
+
 import sys
 
 from game import Game
