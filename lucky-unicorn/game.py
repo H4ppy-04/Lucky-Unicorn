@@ -67,7 +67,7 @@ class Game(State):
 
     def end_round(self):
         if input("Play again? [n,Y*] > ").lower() not in ["y", ""]:
-            self.dump(path="data/local.json")
+            self.dump(path="data/local.jsonc")
             sys.exit("See you next time!")
 
     def play(self):
