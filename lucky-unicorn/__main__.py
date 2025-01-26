@@ -10,7 +10,9 @@ from game import Game
 
 def main():
     if not os.path.isfile("data/local.jsonc"):
-        with open("data/local.jsonc", "w") as local, open("data/spec.jsonc", "r") as spec:
+        with open("data/local.jsonc", "w") as local, open(
+            "data/spec.jsonc", "r"
+        ) as spec:
             local.write(spec.read())
             local.close()
 
